@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input {
+  width: 60px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+#errorMsg {
+  color: red;
+  margin-bottom: 10px;
+}
+
+#tableContainer {
+  max-height: 500px;
+  max-width: 100%;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: auto;
+  background-color: #ffe6f0; /* Light pink background for table */
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #ffccd5; /* Slightly darker pink for headers */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+td:first-child,
+th:first-child {
+  background-color: #ffb6c1; /* Light pink highlight for first column */
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+tr:nth-child(even) td {
+  background-color: #ffe6ec; /* Alternating light pink shade */
+}

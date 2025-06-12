@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Multiplication Table</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Multiplication Table Generator</h1>
+
+  <form id="tableForm">
+    <label>Start Column:
+      <input type="number" id="startCol" required>
+    </label>
+    <label>End Column:
+      <input type="number" id="endCol" required>
+    </label>
+    <label>Start Row:
+      <input type="number" id="startRow" required>
+    </label>
+    <label>End Row:
+      <input type="number" id="endRow" required>
+    </label>
+    <button type="submit">Generate Table</button>
+  </form>
+
+  <div id="errorMsg"></div>
+  <div id="tableContainer">
+    <table id="multTable"></table>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
